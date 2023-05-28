@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Aydınlanma - Online Kitap Alışveriş Sitesi</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type=text/css href="style.css">
+</head>
+<body>
+    <div class="sayfa">
+    <div class="ust">
+            <div id="logo">
+                <img src="images/ramiz.jpg" alt="Logo">
+                <h1><a href="index.html">AYDINLANMA</a></h1>
+                <p>Online Kitap Alışveriş Sitesi</p>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="kitaplar.html">Kitaplar</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="kayit_giris.html">Kayıt Ol/Giriş Yap</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Giriş Yap</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Kullanıcı adı veya Email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Şifre">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit"><a href="index.html">Devam</a></button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:10px"> Beni Hatırla
+            </label>
+            <p class="form__text">
+                <a href="#" class="form__link">Şifremi unuttum!</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Hesabınız yok mu? Hesap oluşturun</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Hesap oluştur</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Kullanıcı adı">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" id="signupEmail" class="form__input" autofocus placeholder="Email (aa@aa.co)">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" id="passWord" class="form__input" autofocus placeholder="Şifre">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" id="passWordConfirm" class="form__input" autofocus placeholder="Şifrenizi onaylayın">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" id="add" type="submit"><a href="index.html">Devam</a></button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Zaten bir hesabınız var mı? Giriş yapın</a>
+            </p>
+        </form>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
